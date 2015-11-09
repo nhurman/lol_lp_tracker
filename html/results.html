@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>LP Tracker</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/theme.css" rel="stylesheet"/>
+    <link href="theme.css" rel="stylesheet"/>
+  </head>
+  <body role="document">
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">LP Tracker</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">Instructions</a>
+            </li>
+            <li>
+              <a href="#contact">Random summoner</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container theme-showcase" role="main">
+      <div class="banner"></div>
+      <div class="page-header">
+        <h1>I Haxa I</h1>
+      </div>
+      
+      <div class="col-lg-6 team100">
+        <table class="table table-striped scoreboard col-lg-6">
+          <thead>
+            <tr>
+              <th class="summoner-name">Summoner</th>
+              <th class="kda">K/D/A</th>
+              <th class="gold">Gold</th>
+              <th class="items">Items</th>
+              <th class="summoners"></th>
+              <th class="champion"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="template" style="display: none">
+              <td class="summoner-name"><span class="name"></span>
+              <br><span class="label label-primary tier"></span></td>
+              <td class="kda"><span class="details"></span><br><span class="ratio"></span></td>
+              <td class="gold"><span class="amount"></span><br/><span class="cs"></span></td>
+              <td class="items"></td>
+              <td class="summoners">
+                <span class="spell0"></span>
+                <br/>
+                <span class="spell1"></span>
+              </td>
+              <td class="champion"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-lg-6 team200">
+        <table class="table table-striped scoreboard col-lg-6">
+          <thead>
+            <tr>
+              <th class="champion"></th>
+              <th class="summoners"></th>
+              <th class="items">Items</th>
+              <th class="gold">Gold</th>
+              <th class="kda">K/D/A</th>
+              <th class="summoner-name">Summoner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="template" style="display: none">
+              <td class="champion"></td>
+              <td class="summoners">
+                <span class="spell0"></span>
+                <br/>
+                <span class="spell1"></span>
+              </td>
+              <td class="items"></td>
+              <td class="gold"><span class="amount"></span><br/><span class="cs"></span></td>
+              <td class="kda"><span class="details"></span><br><span class="ratio"></span></td>
+              <td class="summoner-name">
+                <span class="name"></span><br/>
+                <span class="label label-primary tier"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="_matchdata.js"></script>
+    <script src="js/sprites.js"></script>
+    <script src="js/sprite-helper.js"></script>
+    <script>
+      var sc = new Scoreboard($('.team100').parent());
+      sc.drawLine(100, "MKY Riesenglied", "Bronze V", "0/11/2", "0.01:1", "3k", 20, [3185, 1331, 1075, 1006, 1001, 1001, 1001], [1, 4], 113);
+      sc.drawLine(200, "MKY Riesenglied", "Bronze V", "0/11/2", "0.01:1", "3k", 20, [3185, 1331, 1075, 1006, 1001, 1001, 1001], [1, 4], 113);
+    </script>
+  </body>
+</html>

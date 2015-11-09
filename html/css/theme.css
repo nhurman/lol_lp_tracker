@@ -1,0 +1,88 @@
+.banner {
+	border: 1px solid rgba(0, 0, 0, 0.6);
+	border-radius: 6px;
+	background-color: #1C1E22;
+	background-image: url('../img/banner.png');
+	background-repeat: no-repeat;
+	width: 1140px;
+	height: 150px;
+	margin-top: 48px;
+}
+
+.scoreboard > tbody > tr > td, th {
+	vertical-align: middle;
+	padding: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.team100 .summoner-name {
+	text-align: left;
+	padding-left: 5px;
+}
+
+.team200 .summoner-name {
+	text-align: right;
+	padding-right: 5px;
+}
+
+.scoreboard .kda {
+	width: 70px;
+}
+
+.scoreboard .kda .ratio{
+	display: none;
+}
+
+.scoreboard .gold {
+	width: 70px;
+	display: none;
+}
+
+.scoreboard .items {
+	width: 256px;
+}
+
+.scoreboard .summoners {
+	width: 24px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.scoreboard .summoners img,
+.scoreboard .items img {
+	border: solid black 1px;
+}
+
+.scoreboard .champion {
+	width: 48px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.scoreboard .spacer {
+	width: 10px;
+}
+
+.team100 {
+	padding: 0px;
+	padding-right: 2px;
+}
+
+.team200 {
+	padding: 0px;
+	padding-left: 2px;
+}
+
+.team100 .champion {
+	padding-right: 5px;
+}
+
+.team200 .champion {
+	padding-left: 5px;
+}
+
+.team200 .items {
+	direction: rtl;
+}

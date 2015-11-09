@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>LP Tracker</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/theme.css" rel="stylesheet"/>
+    <link href="theme.css" rel="stylesheet"/>
+  </head>
+  <body role="document">
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">LP Tracker</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">Instructions</a>
+            </li>
+            <li>
+              <a href="#contact">Random summoner</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+      <div class="banner"></div>
+
+      <div class="alert alert-danger alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        This summoner is not in our database.
+        <strong>Is that you?</strong> Check the <a href="#">instructions</a> to start tracking your LP!
+      </div>
+
+      <div class="page-header">
+        <h1>Summoner Lookup</h1>
+      </div>
+
+      <form action="" class="form-inline text-center">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Summoner Name"/>
+        </div>
+        <div class="form-group">
+          <select class="form-control">
+            <option value="">EUW</option>
+            <option value="">EUNE</option>
+            <option value="">NA</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary" value="Search"/>
+        </div>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
